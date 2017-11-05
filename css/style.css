@@ -1,12 +1,12 @@
 html, body {
   margin: 0;
   padding: 0;
+    background-color: #1c1c1c;
 }
-
 
 .header {
   background-color: #1c1c1c;
-  font-family: 'Oswald', sans-serif;
+  font-family: sans-serif;
 }
 
 h1 {
@@ -17,12 +17,40 @@ h1 {
   color: #fff;
 }
 
+.dropdown-menu {
+  padding: 0.8rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.form-group {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.email-error, .password-error {
+  background-color: black;
+  height: 30px;
+  width: 100%;
+  border: 1px solid black;
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 18px;
+  padding: 8px;
+  line-height: 10px;
+  text-shadow: rgba(0, 0, 0, 0.7) 1px 1px 2px;
+}
+
+.dropdown-divider {
+  margin-top: 1rem;
+}
+
 .container {
   max-width: 940px;
 }
 
 .main {
-  background: url(../images/bg.jpg);
+  background: url(../images/bg.jpg) no-repeat center center;
   background-size: cover;
   height: 600px;
 }
@@ -32,6 +60,7 @@ h1 {
   text-align: left;
   border: 1px solid #fff;
   border-radius: 0;
+  margin-top: 1.2rem;
 }
 
  .card, .card-header {
@@ -51,4 +80,33 @@ h1 {
 ul {
   list-style-type: none;
   padding-left: 0;
+}
+
+.supporting, .footer {
+  background-color: #1c1c1c;
+  color: #fff;  
+}
+
+.middle-text {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.supporting h2 {
+    font-size: 24px;
+}
+
+.supporting p {
+
+}
+
+.middle-photo {
+  background: url(../images/01.jpg) no-repeat center center;
+  background-size: cover;
+  height: 600px;
+}
+
+.footer p {
+  color: #999;
+  font-size: 11px;  
 }
