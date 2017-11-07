@@ -52,7 +52,11 @@ h1 {
 .main {
   background: url(../images/bg.jpg) no-repeat center center;
   background-size: cover;
-  height: 600px;
+  height: 1000px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
@@ -103,10 +107,23 @@ ul {
 .middle-photo {
   background: url(../images/01.jpg) no-repeat center center;
   background-size: cover;
-  height: 600px;
+  height: 700px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;    
 }
 
 .footer p {
   color: #999;
   font-size: 11px;  
+}
+
+
+/* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1024px) {
+    .main, .middle-photo {
+        background-attachment: scroll;
+        height: 500px;
+    }
 }
